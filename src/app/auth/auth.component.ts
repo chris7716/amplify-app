@@ -71,4 +71,8 @@ export class AuthComponent implements OnInit {
     this._auth.signIn(this.loginForm.get('username').value, this.loginForm.get('password').value);
   }
 
+  signUp(){
+    this.router.navigate(['/register']);
+  }
+
 }

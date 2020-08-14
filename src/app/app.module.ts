@@ -12,8 +12,9 @@ import { ProfileComponent } from './profile/profile.component';
 import { AuthService } from './service/auth.service';
 import { from } from 'rxjs';
 import { MDBBootstrapModule, MDBModalService, MDBModalRef } from 'angular-bootstrap-md';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { NotificationComponent } from './notification/notification.component';
+import { RegisterComponent } from './register/register.component';
 
 /* Configure Amplify resources */
 Amplify.configure(awsconfig);
@@ -23,14 +24,16 @@ Amplify.configure(awsconfig);
     AppComponent,
     AuthComponent,
     ProfileComponent,
-    NotificationComponent
+    NotificationComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AmplifyUIAngularModule,
     MDBBootstrapModule.forRoot(),
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [AuthService, MDBModalRef, MDBModalService],
   bootstrap: [AppComponent]
