@@ -21,7 +21,7 @@ export class ProfileComponent implements OnInit {
     }).then(async user => {
       this.userId = user.attributes.sub;
       this.userName = user.username;
-      console.log(this.userName);
+      console.log(user);
       
     })
     .catch(err => console.log("err assigning"));

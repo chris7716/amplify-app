@@ -40,6 +40,7 @@ export class AuthComponent implements OnInit {
 
     this._auth.isSignInButtonClicked$.subscribe(state => {
       this.visible = state;
+      console.log(this.visible);
     });
 
     /* Auth.currentAuthenticatedUser({
@@ -73,6 +74,14 @@ export class AuthComponent implements OnInit {
 
   signUp(){
     this.router.navigate(['/register']);
+  }
+
+  googleSignIn(){
+    Auth.federatedSignIn(
+      {
+        customProvider: "Google"
+      }
+    );
   }
 
 }

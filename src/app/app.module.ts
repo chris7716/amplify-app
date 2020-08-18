@@ -15,6 +15,7 @@ import { MDBBootstrapModule, MDBModalService, MDBModalRef } from 'angular-bootst
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { NotificationComponent } from './notification/notification.component';
 import { RegisterComponent } from './register/register.component';
+import { ConfirmSignUpComponent } from './confirm-sign-up/confirm-sign-up.component';
 
 /* Configure Amplify resources */
 Amplify.configure(awsconfig);
@@ -25,7 +26,8 @@ Amplify.configure(awsconfig);
     AuthComponent,
     ProfileComponent,
     NotificationComponent,
-    RegisterComponent
+    RegisterComponent,
+    ConfirmSignUpComponent
   ],
   imports: [
     BrowserModule,

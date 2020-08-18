@@ -31,11 +31,13 @@
         },
         "categories": {
             "auth": {
-                "amplifydemoappedd0d31e": {}
+                "amplifydemoappedd0d31e": {
+                    "hostedUIProviderCreds": "[{\"ProviderName\":\"Google\",\"client_id\":\"777976482136-s27bgl1vndjoilj6hmqo121d53skkiri.apps.googleusercontent.com\",\"client_secret\":\"qFZgQ2Neu7Vpyhf9Ptebbyol\"}]"
+                }
             }
         }
     },
-"prod": {
+    "prod": {
         "awscloudformation": {
             "AuthRoleName": "amplify-amplifydemoapp-prod-205029-authRole",
             "UnauthRoleArn": "arn:aws:iam::175704135025:role/amplify-amplifydemoapp-prod-205029-unauthRole",

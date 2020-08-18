@@ -1,33 +1,35 @@
 <!-- Default form register -->
-<form class="text-center border border-light p-5">
+<form class="text-center border border-light p-5" [formGroup]="registrationForm">
 
     <p class="h4 mb-4">Sign up</p>
 
-    <div class="form-row mb-4">
-      <div class="col">
-        <!-- First name -->
-        <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name">
-      </div>
-      <div class="col">
-        <!-- Last name -->
-        <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name">
-      </div>
+    <!-- Username -->
+    <div class="md-form md-outline">
+        <input mdbInput mdbValidate class="form-control" placeholder="Username" formControlName="username" required>
+        <label for="form2">Username</label>
+        <mdb-error *ngIf="username.invalid && (username.touched || submitButtonClicked)">Input invalid</mdb-error>
     </div>
 
     <!-- E-mail -->
-    <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+    <div class="md-form md-outline">
+        <input mdbInput mdbValidate class="form-control" placeholder="E-mail" formControlName="email" required>
+        <label for="form2">E-mail</label>
+        <mdb-error *ngIf="email.invalid && (email.touched || submitButtonClicked)">Input invalid</mdb-error>
+    </div>
 
     <!-- Password -->
-    <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
-    <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
-      At least 8 characters and 1 digit
-    </small>
+    <div class="md-form md-outline">
+        <input mdbInput mdbValidate class="form-control" placeholder="Password" formControlName="password" required>
+        <label for="form2">Password</label>
+        <mdb-error *ngIf="password.invalid && (password.touched || submitButtonClicked)">Input invalid</mdb-error>
+    </div>
 
     <!-- Phone number -->
-    <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
-    <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
-      Optional - for two-step authentication
-    </small>
+    <div class="md-form md-outline">
+        <input mdbInput mdbValidate class="form-control" placeholder="Phone Number" formControlName="phone_number" required>
+        <label for="form2">Phone Number</label>
+        <mdb-error *ngIf="phone_number.invalid && (phone_number.touched || submitButtonClicked)">Input invalid</mdb-error>
+    </div>
 
     <!-- Newsletter -->
     <div class="row">
@@ -37,23 +39,16 @@
     </div>
 
     <!-- Sign up button -->
-    <button mdbBtn color="info" block="true" class="my-4" type="submit">Sign in</button>
-
-    <!-- Social register -->
-    <p>or sign up with:</p>
-
-    <a type="button" class="light-blue-text mx-2">
-      <mdb-icon fab icon="facebook"></mdb-icon>
-    </a>
-    <a type="button" class="light-blue-text mx-2">
-      <mdb-icon fab icon="twitter"></mdb-icon>
-    </a>
-    <a type="button" class="light-blue-text mx-2">
-      <mdb-icon fab icon="linkedin"></mdb-icon>
-    </a>
-    <a type="button" class="light-blue-text mx-2">
-      <mdb-icon fab icon="github"></mdb-icon>
-    </a>
+    <button mdbBtn color="info" block="true" class="my-4" type="submit" *ngIf="!visible" (click)="signUp()">Sign Up</button>
+    <button mdbBtn color="info" block="true" class="my-4" *ngIf="visible" disabled>
+        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+        Signing up...
+    </button>
+    
+    <!-- Register -->
+    <p>Already registered?
+        <a (click)="signIn()">Sign In</a>
+    </p>
 
     <hr>
 
