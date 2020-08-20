@@ -16,15 +16,11 @@ export class ProfileComponent implements OnInit {
   constructor(private _auth:AuthService, private _router:Router) { }
 
   ngOnInit(): void {
-    Auth.currentAuthenticatedUser({
-      bypassCache: false
-    }).then(async user => {
-      this.userId = user.attributes.sub;
-      this.userName = user.username;
-      console.log(user);
-      
-    })
-    .catch(err => console.log("err assigning"));
+    Auth.currentAuthenticatedUser()
+      .then(userData => {
+        console.log(userData.getBasicProfile().getName());
+      })
+      .catch(() => console.log('Not signed in'));
   }
 
   logOut(){
