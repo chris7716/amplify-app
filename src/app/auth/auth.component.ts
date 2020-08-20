@@ -6,6 +6,7 @@ import { FormGroup, FormControl } from '@angular/forms';
 import { MDBModalRef, MDBModalService } from 'angular-bootstrap-md';
 import { ProfileComponent } from '../profile/profile.component';
 import { NotificationComponent } from '../notification/notification.component';
+import { CognitoHostedUIIdentityProvider } from "@aws-amplify/auth/lib/types";
 
 @Component({
   selector: 'app-auth',
@@ -79,9 +80,9 @@ export class AuthComponent implements OnInit {
   googleSignIn(){
     Auth.federatedSignIn(
       {
-        customProvider: "Google"
+        'provider': CognitoHostedUIIdentityProvider.Google
       }
-    );
+    )
   }
 
 }

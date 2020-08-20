@@ -18,14 +18,14 @@ export class ProfileComponent implements OnInit {
   ngOnInit(): void {
     Auth.currentAuthenticatedUser()
       .then(userData => {
-        console.log(userData.getBasicProfile().getName());
+        console.log(userData);
       })
       .catch(() => console.log('Not signed in'));
   }
 
   logOut(){
     this._auth.signOut();
-    this._router.navigate(['/login']);
+    //this._router.navigate(['/login']);
   }
 
 }
