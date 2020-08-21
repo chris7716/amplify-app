@@ -54,6 +54,8 @@ export class AuthComponent implements OnInit {
     })
     .catch(err => console.log("err assigning"));
 
+    */
+
     Hub.listen('auth', (data) => {
       console.log(data);
       switch (data.payload.event) {
@@ -64,7 +66,7 @@ export class AuthComponent implements OnInit {
             this.router.navigate(['/login']);
             break;  
       }
-  }); */
+  }); 
 
   }
 
