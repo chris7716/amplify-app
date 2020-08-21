@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "amplifydemoappedd0d31e_identitypool_edd0d31e",
+    "identityPoolName": "amplifydemoappe1e2abfa_identitypool_e1e2abfa",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "amplifedd0d31e",
-    "userPoolName": "amplifydemoappedd0d31e_userpool_edd0d31e",
+    "resourceNameTruncated": "amplife1e2abfa",
+    "userPoolName": "amplifydemoappe1e2abfa_userpool_e1e2abfa",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -28,10 +28,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "amplifedd0d31e_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "amplife1e2abfa_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "edd0d31e",
-    "resourceName": "amplifydemoappedd0d31e",
+    "sharedId": "e1e2abfa",
+    "resourceName": "amplifydemoappe1e2abfa",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
@@ -46,13 +46,13 @@
         ]
     },
     "useDefault": "defaultSocial",
-    "userPoolGroupList": [],
-    "dependsOn": [],
     "hostedUI": true,
-    "hostedUIDomainName": "amplifydemoappc65eb391-c65eb391",
+    "hostedUIDomainName": "amplifydemoappe1e2abfa-e1e2abfa",
     "authProvidersUserPool": [
         "Google"
     ],
     "hostedUIProviderMeta": "[{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid email profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"sub\"}}]",
-    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:4200/profile/\",\"http://localhost:4200/profile/\"],\"LogoutURLs\":[\"http://localhost:4200/login/\"]}"
+    "userPoolGroupList": [],
+    "dependsOn": [],
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://develop.d1q2lv6ifnz1eb.amplifyapp.com/profile/\"],\"LogoutURLs\":[\"https://develop.d1q2lv6ifnz1eb.amplifyapp.com/login/\"]}"
 }

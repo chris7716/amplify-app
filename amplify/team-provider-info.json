@@ -13,8 +13,11 @@
         },
         "categories": {
             "auth": {
-                "amplifydemoappedd0d31e": {
-                    "hostedUIProviderCreds": "[{\"ProviderName\":\"Google\",\"client_id\":\"777976482136-s27bgl1vndjoilj6hmqo121d53skkiri.apps.googleusercontent.com\",\"client_secret\":\"qFZgQ2Neu7Vpyhf9Ptebbyol\"}]"
+                "amplifydemoapp1ace89b9": {
+                    "hostedUIProviderCreds": "[{\"ProviderName\":\"Google\",\"client_id\":\"777976482136-0ns42758cfvtpjkdg1ukpdk2kr29c302.apps.googleusercontent.com\",\"client_secret\":\"0aMkk1mB9jgsBt6PxQ82qhz4\"}]"
+                },
+                "amplifydemoapp80ab08ba": {
+                    "hostedUIProviderCreds": "[{\"ProviderName\":\"Google\",\"client_id\":\"777976482136-0ns42758cfvtpjkdg1ukpdk2kr29c302.apps.googleusercontent.com\",\"client_secret\":\"0aMkk1mB9jgsBt6PxQ82qhz4\"}]"
                 }
             }
         }
@@ -51,8 +54,14 @@
         },
         "categories": {
             "auth": {
-                "amplifydemoappedd0d31e": {
+                "amplifydemoapp437a3299": {
                     "hostedUIProviderCreds": "[{\"ProviderName\":\"Google\",\"client_id\":\"777976482136-4dj6ofchdjnbed0sdu6162c9vma1qakn.apps.googleusercontent.com\",\"client_secret\":\"PG-XYQymexKrNTu3XflSIEa6\"}]"
+                },
+                "amplifydemoapp80ab08ba": {
+                    "hostedUIProviderCreds": "[{\"ProviderName\":\"Google\",\"client_id\":\"777976482136-0ns42758cfvtpjkdg1ukpdk2kr29c302.apps.googleusercontent.com\",\"client_secret\":\"0aMkk1mB9jgsBt6PxQ82qhz4\"}]"
+                },
+                "amplifydemoappe1e2abfa": {
+                    "hostedUIProviderCreds": "[{\"ProviderName\":\"Google\",\"client_id\":\"777976482136-0ns42758cfvtpjkdg1ukpdk2kr29c302.apps.googleusercontent.com\",\"client_secret\":\"0aMkk1mB9jgsBt6PxQ82qhz4\"}]"
                 }
             }
         }
