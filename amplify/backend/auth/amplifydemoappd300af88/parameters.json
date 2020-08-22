@@ -1,0 +1,58 @@
+{
+    "identityPoolName": "amplifydemoappd300af88_identitypool_d300af88",
+    "allowUnauthenticatedIdentities": false,
+    "resourceNameTruncated": "amplifd300af88",
+    "userPoolName": "amplifydemoappd300af88_userpool_d300af88",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+        "email"
+    ],
+    "userpoolClientGenerateSecret": true,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+        "email"
+    ],
+    "userpoolClientReadAttributes": [
+        "email"
+    ],
+    "userpoolClientLambdaRole": "amplifd300af88_userpoolclient_lambda_role",
+    "userpoolClientSetAttributes": false,
+    "sharedId": "d300af88",
+    "resourceName": "amplifydemoappd300af88",
+    "authSelections": "identityPoolAndUserPool",
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    },
+    "useDefault": "defaultSocial",
+    "hostedUI": true,
+    "hostedUIDomainName": "amplifydemoappd300af88-d300af88",
+    "authProvidersUserPool": [
+        "Google"
+    ],
+    "hostedUIProviderMeta": "[{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid email profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"sub\"}}]",
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://develop.d1q2lv6ifnz1eb.amplifyapp.com/profile/\"],\"LogoutURLs\":[\"https://develop.d1q2lv6ifnz1eb.amplifyapp.com/login/\"]}",
+    "userPoolGroupList": [],
+    "dependsOn": []
+}

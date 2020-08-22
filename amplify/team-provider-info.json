@@ -1,0 +1,69 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-amplifydemoapp-dev-103557-authRole",
+            "UnauthRoleArn": "arn:aws:iam::175704135025:role/amplify-amplifydemoapp-dev-103557-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::175704135025:role/amplify-amplifydemoapp-dev-103557-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-amplifydemoapp-dev-103557-deployment",
+            "UnauthRoleName": "amplify-amplifydemoapp-dev-103557-unauthRole",
+            "StackName": "amplify-amplifydemoapp-dev-103557",
+            "StackId": "arn:aws:cloudformation:us-east-1:175704135025:stack/amplify-amplifydemoapp-dev-103557/5b7c5570-db90-11ea-8a4d-0e71a2c850a7",
+            "AmplifyAppId": "d1q2lv6ifnz1eb"
+        },
+        "categories": {
+            "auth": {
+                "amplifydemoapp1ace89b9": {
+                    "hostedUIProviderCreds": "[{\"ProviderName\":\"Google\",\"client_id\":\"777976482136-0ns42758cfvtpjkdg1ukpdk2kr29c302.apps.googleusercontent.com\",\"client_secret\":\"0aMkk1mB9jgsBt6PxQ82qhz4\"}]"
+                },
+                "amplifydemoappe1e2abfa": {
+                    "hostedUIProviderCreds": "[{\"ProviderName\":\"Google\",\"client_id\":\"777976482136-0ns42758cfvtpjkdg1ukpdk2kr29c302.apps.googleusercontent.com\",\"client_secret\":\"0aMkk1mB9jgsBt6PxQ82qhz4\"}]"
+                }
+            }
+        }
+    },
+    "prod": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-amplifydemoapp-prod-205029-authRole",
+            "UnauthRoleArn": "arn:aws:iam::175704135025:role/amplify-amplifydemoapp-prod-205029-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::175704135025:role/amplify-amplifydemoapp-prod-205029-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-amplifydemoapp-prod-205029-deployment",
+            "UnauthRoleName": "amplify-amplifydemoapp-prod-205029-unauthRole",
+            "StackName": "amplify-amplifydemoapp-prod-205029",
+            "StackId": "arn:aws:cloudformation:us-east-1:175704135025:stack/amplify-amplifydemoapp-prod-205029/89d45730-dd78-11ea-84ba-0e3038696552",
+            "AmplifyAppId": "d1q2lv6ifnz1eb"
+        },
+        "categories": {
+            "auth": {
+                "amplifydemoappedd0d31e": {}
+            }
+        }
+    },
+    "test": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-amplifydemoapp-test-160618-authRole",
+            "UnauthRoleArn": "arn:aws:iam::175704135025:role/amplify-amplifydemoapp-test-160618-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::175704135025:role/amplify-amplifydemoapp-test-160618-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-amplifydemoapp-test-160618-deployment",
+            "UnauthRoleName": "amplify-amplifydemoapp-test-160618-unauthRole",
+            "StackName": "amplify-amplifydemoapp-test-160618",
+            "StackId": "arn:aws:cloudformation:us-east-1:175704135025:stack/amplify-amplifydemoapp-test-160618/ff2b6390-e2d0-11ea-a3eb-12b6a099270b",
+            "AmplifyAppId": "d1q2lv6ifnz1eb"
+        },
+        "categories": {
+            "auth": {
+                "amplifydemoapp437a3299": {
+                    "hostedUIProviderCreds": "[{\"ProviderName\":\"Google\",\"client_id\":\"777976482136-4dj6ofchdjnbed0sdu6162c9vma1qakn.apps.googleusercontent.com\",\"client_secret\":\"PG-XYQymexKrNTu3XflSIEa6\"}]"
+                },
+                "amplifydemoapp80ab08ba": {
+                    "hostedUIProviderCreds": "[{\"ProviderName\":\"Google\",\"client_id\":\"777976482136-0ns42758cfvtpjkdg1ukpdk2kr29c302.apps.googleusercontent.com\",\"client_secret\":\"0aMkk1mB9jgsBt6PxQ82qhz4\"}]"
+                },
+                "amplifydemoappd300af88": {
+                    "hostedUIProviderCreds": "[{\"ProviderName\":\"Google\",\"client_id\":\"777976482136-0ns42758cfvtpjkdg1ukpdk2kr29c302.apps.googleusercontent.com\",\"client_secret\":\"0aMkk1mB9jgsBt6PxQ82qhz4\"}]"
+                }
+            }
+        }
+    }
+}
